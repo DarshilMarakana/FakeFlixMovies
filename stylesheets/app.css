@@ -421,14 +421,14 @@ a.movie-item:hover {
 
 .pricing-box {
     padding: 50px;
-    margin: 15px 0;
+    margin: 10px 0;
     background-color: var(--box-bg);
     border-top: 5px solid transparent;
     transition: transform 0.3s ease-in-out;
 }
 
 .pricing-box:hover {
-    transform: translateY(-20px);
+     transform: translateY(-10px); 
 }
 
 .pricing-box.hightlight {
