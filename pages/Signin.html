@@ -25,31 +25,69 @@
         top: 0;
         width: 100%;
         height: 100%;
+        opacity: 0.5;
         background: url("../images/hero-img.jpg");
         background-position: center;
     }
-</style>
+
+    nav {
+        position: fixed;
+        z-index: 1;
+        padding: 25px 60px;
+    }
+
+    nav a image{
+
+    }
+
+    @media(max-width: 740px){
+        body::before{
+            display: none;
+        }
+
+        nav, .formwrapper {
+            padding: 20px;
+        }
+
+        nav a image {
+            width: 140px;
+        }
+
+        .form-wrapper{
+            top: 43%;
+            width: 100%;
+        }
+
+        .form-wrapper form {
+            margin: 25px 0 40px;
+        }
+    }
+    
+    
+    
+    </style>
 </head>
 <body>
 
+    
     <div class="form-wrapper">
         <h2>Sign In</h2>
         <form action="#">
             <div class="form-control">
-                <input type="text">
+                <input type="text" required>
                 <label>Email or Phone number</label>
             </div>
             <div class="form-control">
-                <input type="password">
+                <input type="password" required>
                 <label>Password</label>
             </div>
-            <button>Sign In</button>
+            <button type="submit">Sign In</button>
             <div class="form-help">
                 <div class="remember-me">
                     <input type="checkbox" id="remember-me">
                     <label for="remember-me">Remember Me</label>
-                    <a href="#">Need Help</a>
                 </div>
+                <a href="#" >Need Help?</a>
             </div>
         </form>
         <p>
