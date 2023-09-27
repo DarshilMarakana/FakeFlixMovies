@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+.gridwrapper{
+    width: 100%;
+    border: none;
+    padding: 2%;
+    height: auto;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+.gridcontainer{
+    border: none;
+    width:100%;    
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    overflow-x: hidden;
+}
+
+@media (max-width:860px) {
+    .gridcontainer{
+        grid-template-columns: repeat(3,1fr);
+        overflow-x: hidden;
+    }
+    
+}
+
+@media (max-width:560px) {
+    .gridcontainer{
+        grid-template-columns: repeat(2,1fr);
+        overflow-x: hidden;
+    }
+}

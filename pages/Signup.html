@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup | FakeFlixMovies</title>
+<!-- GOOGLE FONTS -->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap"
+    rel="stylesheet">
+<!-- OWL CAROUSEL -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous" />
+<!-- BOX ICONS -->
+<link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+<!-- APP CSS -->
+<link rel="stylesheet" href="../stylesheets/app.css">
+<link rel="stylesheet" href="../stylesheets/grid.css">
+<link rel="stylesheet" href="../stylesheets/signinstyle.css">
+<style>
+     body::before{
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.5;
+        background: url("../images/netflix1.jpg");
+        background-position: center;
+    }
+
+
+    @media(max-width: 740px){
+        body::before{
+            display: none;
+        }
+
+        nav, .formwrapper {
+            padding: 20px;
+        }
+
+        nav a image {
+            width: 140px;
+        }
+
+        .form-wrapper{
+            top: 43%;
+            width: 100%;
+        }
+
+        .form-wrapper form {
+            margin: 25px 0 40px;
+        }
+    }
+    .form-wrapper{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 430px;
+    padding: 60px;
+    border-radius: 4px;
+    background: rgba(0, 0, 0, 0.80);
+    transform: translate(-50% , -50%);
+}
+    .form-wrapper h2{
+    color: #fff;
+    font-size: 2rem;
+}
+.form-wrapper form{
+    margin: 25px 0 65px;
+}
+
+    form .form-control{
+    height: 50px;
+    margin-bottom: 16px;
+    position: relative;
+}
+
+.form-control input{
+    height: 100%;
+    width: 100%;
+    background: #333;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 1rem;
+    padding: 0 20px;
+}
+
+.form-control input:is(:focus, :valid) {
+    padding: 4px 20px 0;
+    /* background: #444; */
+    background: transparent;
+    border: 1px solid white;
+}
+ 
+.form-control label{
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    color: #8c8c8c;
+    pointer-events: none;
+    font-size: 1rem;
+    transform: translateY(-50%);
+    transition: all 0.3s linear;
+}
+
+.form-control input:is(:focus, :valid) ~ label {
+    font-size: 1rem;
+    transform: translateY(-140%);
+    background-color: transparent;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.80);
+    padding: 0 7px;
+
+}
+
+form button {
+    padding: 16px 0;
+    font-size: 1.25rem;
+    border: none;
+    color: #fff;
+    width: 100%;
+    position: relative;
+    align-items: center;
+    font-weight: 700;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: var(--main-color);
+    outline: none;
+    margin: 25px 0 10px ;
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+}
+
+button:hover{
+            background: transparent;
+            border: 2px solid var(--main-color);
+            cursor: pointer;
+            width: 100%;
+            box-shadow: 2px 2px 12px 1px rgba(103, 57, 57, 0.886);
+
+        }
+
+    
+form .remember-me {
+    display: flex;
+    
+}
+
+form .form-help {
+    display: flex;
+    justify-content: space-between;
+}
+
+form .form-help :where(label, a){
+    font-size: 0.9rem;
+    
+}
+
+form .remember-me input {
+    margin-right: 5px;
+    accent-color: #333;
+}
+
+.form-wrapper :where(label, p, small, a){
+    color: #b3b3b3;
+}
+
+.form-wrapper p a {
+    color: #fff;
+}
+
+.form-wrapper small {
+    display: block;
+    margin-top: 15px;
+}
+
+.form-wrapper small a {
+    color: #0071eb;
+}
+
+.form-wrapper a{
+    text-decoration: none;
+}
+
+.form-wrapper a:hover{
+    text-decoration: underline;
+}
+   
+
+
+</style>
+</head>
+<body>
+
+    
+    <div class="form-wrapper">
+        <h2>Sign up</h2>
+        <form action="#" style="margin-bottom: 0;">
+            <div class="form-control">
+                <input type="text" required>
+                <label>Enter Your Name</label>
+                </div>
+                <div class="helping" style="height:5px"></div>
+            <div class="form-control">
+                <input type="text" required>
+                <label>Enter Your Email</label>
+                </div>
+                <div class="helping" style="height:5px"></div>
+                <div class="form-control">
+                    <input type="password" required>
+                    <label>Enter Password</label>
+                </div><div class="helping" style="height:5px"></div>
+                <div class="form-control">
+                    <input type="password" required>
+                    <label>Confirm Password</label>
+                </div>
+                <button type="submit">Sign up</button>  
+                </form>
+                <div>
+                    <h4 style="margin-bottom:10px">
+                        Old to FAKEFLIX ? <a href="./Signin.html">Sign in now</a>
+                    </h4>
+                    <a href="../index.html">
+                        BACK TO HOME
+                        </a>
+                </div>
+    </div>
+</body>
+</html>
